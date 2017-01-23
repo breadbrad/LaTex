@@ -1,6 +1,5 @@
 \documentclass[a4paper,11pt]{article}
 
-%A Few Useful Packages
 \usepackage{marvosym}
 \usepackage{fontspec} 					%for loading fonts
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
