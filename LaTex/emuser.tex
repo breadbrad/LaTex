@@ -1,0 +1,92 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+
+
+\hyphenation{im-pre-se}
+
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Brad \textsc{Lim}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+
+
+%Section: Work Experience at the top
+
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+ \fontsize{10}{12}\selectfont{\textsc{May} 2017} & \textbf{B.S. in Computer Science}, \emph{\fontsize{10}{12}\selectfont{Software and Data Systems Development track}}\\ 
+ & College of Science and Engineering \\
+ & University of Minnesota - Twin Cities, Minneapolis, MN\\\\
+\fontsize{10}{12}\selectfont{\textsc{May} 2015} & \textbf{B.S. in Computer Science}, \emph{\fontsize{10}{12}\selectfont{Computer Science track}}\\ 
+& College of Letters and Science \\
+& University of Wisconsin - Oshkosh, Oshkosh, WI
+
+\end{tabular}
+
+
+%Section: Skills
+\section{Skills}
+\begin{tabular}{rl}
+ \textsc{Languages:}&C/C++, Java, Python, Clojure, Lisp, HTML, Ruby on Rails\\
+\textsc{Operating Systems:}& Ubuntu, Windows, Macintosh 
+\\
+\textsc{Software:}&Vim, Visual Studio, AWS, Github, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}, Libreoffice 
+\\
+\textsc{Foreign Language:}&Bilingual proficiency in Korean\\
+\end{tabular}
+
+
+%Section: Projects
+\section{Projects}
+\begin{tabular}{r|p{11cm}}
+ \textbf{Business Review Website} &  \emph{http://www.mhmdog.com}\\ 
+ & Create a restaurant review website starting from the beginning by using AWS, Ruby on Rails, HTML, Javascript, Bootstrap and MVC pattern \\
+ &  \fontsize{10}{12}\selectfont{ - https://github.com/breadbrad/gourmet }
+\end{tabular}
+
+
+
+
+\end{document}
+
