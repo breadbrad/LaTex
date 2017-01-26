@@ -1,5 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 
+%A Few Useful Packages
 \usepackage{marvosym}
 \usepackage{fontspec} 					%for loading fonts
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
@@ -10,7 +11,8 @@
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 
-
+\usepackage{marvosym}
+\usepackage{bbding}
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
@@ -41,58 +43,64 @@ ItalicFont = Fontin-Italic.otf
 %--------------------TITLE-------------
 \par{\centering
 		{\Huge Brad \textsc{Lim}
-	}\bigskip\par}
+			}\par}
 
-%--------------------SECTIONS-----------------------------------
-%Section: Personal Data
-\section{Personal Data}
-
-
-
-%Section: Work Experience at the top
-\section{Work Experience}
-\begin{tabular}{r|p{11cm}}
- \emph{Current} & \textbf{Cargo Specialist} at \textsc{United States Army Reserve} \\\textsc{Dec 2015}& \fontsize{10}{12}\selectfont{Arden Hills, MN}\\&\footnotesize{- Inspect, count and document cargo utilizing both manual and automated data processing systems \newline - Operate and maintain all types and sizes of winches, cranes and forklifts
-  }\\\multicolumn{2}{c}{} \\
-   \textsc{Jul 2015} & \textbf{} \\\textsc{}& \fontsize{10}{12}\selectfont {} \\&\footnotesize{}\\\multicolumn{2}{c}{} \\
-   \textsc{Summer 2013} & \textbf{Manufacturer Intern} at \textsc{Samsung}\\\textsc{} & \fontsize{10}{12}\selectfont{Gwangju, South Korea} \\&\footnotesize{- Assist in creating a maintenance schedule for new manufacturing equipment \newline- Learn the efficient manufacturing process of refrigerators and apply this method on the assembly line}
-   \end{tabular}
-
-%Section: Education
-\section{Education}
-\begin{tabular}{rl}	
- \fontsize{10}{12}\selectfont{\textsc{May} 2017} & \textbf{B.S. in Computer Science}, \emph{\fontsize{10}{12}\selectfont{Software and Data Systems Development track}}\\ 
- & College of Science and Engineering \\
- & University of Minnesota - Twin Cities, Minneapolis, MN\\\\
-\fontsize{10}{12}\selectfont{\textsc{May} 2015} & \textbf{B.S. in Computer Science}, \emph{\fontsize{10}{12}\selectfont{Computer Science track}}\\ 
-& College of Letters and Science \\
-& University of Wisconsin - Oshkosh, Oshkosh, WI
-
-\end{tabular}
-
-
-%Section: Skills
-\section{Skills}
-\begin{tabular}{rl}
- \textsc{Languages:}&C/C++, Java, Python, Clojure, Lisp, HTML, Ruby on Rails\\
-\textsc{Operating Systems:}& Ubuntu, Windows, Macintosh 
-\\
-\textsc{Software:}&Vim, Visual Studio, AWS, Github, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}, Libreoffice 
-\\
-\textsc{Foreign Language:}&Bilingual proficiency in Korean\\
-\end{tabular}
-
-
-%Section: Projects
-\section{Projects}
-\begin{tabular}{r|p{11cm}}
- \textbf{Business Review Website} &  \emph{http://www.mhmdog.com}\\ 
- & Create a restaurant review website starting from the beginning by using AWS, Ruby on Rails, HTML, Javascript, Bootstrap and MVC pattern \\
- &  \fontsize{10}{12}\selectfont{ - https://github.com/breadbrad/gourmet }
-\end{tabular}
+			%--------------------SECTIONS-----------------------------------
+			%Section: Personal Data
+			\begin{center}
+			\fontsize{10}{12}\selectfont{ Minneapolis, MN 55414   \Telefon  \Email  limxx444@umn.edu} \newline
+			\end{center}
 
 
 
+			%Section: Education
+			\section{Education}
+			\begin{tabular}{rl}	
+			 \fontsize{10}{12}\selectfont{Expected \textsc{May} 2017} & \textbf{Bachelor of Science in Computer Science}, \\
+			  & \emph{\fontsize{10}{12}\selectfont{Software and Data Systems Development track}}\\ 
+			   & College of Science and Engineering \\
+			    & University of Minnesota - Twin Cities, Minneapolis, MN \\
+			    & 
 
-\end{document}
+			    \end{tabular}
+
+
+			    %Section: Work Experience at the top
+			    \section{Experiences}
+			    \begin{tabular}{r|p{11cm}}
+			     \emph{Current} & \textbf{Cargo Specialist} at \textsc{United States Army Reserve} \\\textsc{Dec 2015}& \fontsize{10}{12}\selectfont{Arden Hills, MN}\\&\footnotesize{- Inspect, count and document cargo utilizing both manual and automated data processing systems \newline - Operate and maintain all types and sizes of winches, cranes and forklifts
+			      }\\\multicolumn{2}{c}{} \\
+			       \textsc{Jul 2015} & \textbf{Classical Piano Instructor} \\\textsc{Sept 2014} &\fontsize{10}{12}\selectfont{Oshkosh, WI} \\&\footnotesize{- Developed lesson plans and selected course material \newline- Evaluated and graded students performance in classwork and homework assignments} \\\multicolumn{2}{c}{} \\
+			       \textsc{Summer 2013} & \textbf{Manufacturer Intern} at \textsc{Samsung}\\\textsc{} & \fontsize{10}{12}\selectfont{Gwangju, South Korea} \\&\footnotesize{- Assisted in creating a maintenance schedule for new manufacturing equipment \newline- Learned the efficient manufacturing process of refrigerators and applied this method on the assembly line}
+			       \end{tabular}
+
+
+
+			       %Section: Skills
+			       \section{Skills}
+			       \begin{tabular}{rl}
+			        \textsc{Languages:}&C/C++, Java, Python, Clojure, Lisp, HTML, Ruby on Rails\\
+				\textsc{Operating Systems:}& Ubuntu, Windows, Macintosh 
+				\\
+				\textsc{Software:}&Vim, Visual Studio, AWS, Github, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}, LibreOffice 
+				\\
+				\textsc{Foreign Language:}&Bilingual proficiency in Korean\\
+				\end{tabular}
+
+
+				%Section: Projects
+				\section{Projects}
+				\begin{tabular}{r|p{11cm}}
+				 Independent Work & \textbf{Business Review Website} : \emph{http://www.mhmdog.com}\\ 
+				  & Create a restaurant review website starting from the beginning by using AWS, Ruby on Rails, HTML, Javascript, Bootstrap and MVC pattern \\
+				   &  \fontsize{10}{12}\selectfont{ - https://github.com/breadbrad/gourmet }
+				   \end{tabular}
+
+
+				   \section{My Link}
+
+				    \emph{https://github.com/breadbrad}
+
+
+				    \end{document}
 
